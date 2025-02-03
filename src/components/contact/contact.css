@@ -63,6 +63,39 @@
     background-color: skyblue;
 }
 
+/* Flash message styles */
+.flash-message {
+    position: fixed; 
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: #7ae037; 
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1000; 
+    width: 80%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* Fade out effect for the flash message */
+  .flash-message {
+    animation: fadeOut 10s forwards; 
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
 
 @media screen and (max-width: 1024px){
     .contact__container{
